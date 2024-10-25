@@ -29,28 +29,53 @@
 
 <body class="m-auto">
     <header class="">
-        <nav class="navbar bg-white shadow-2xl fixed px-10">
-            <div class="flex-1">
-                <img src="Images/logo.jpg" class="w-1/12">
+        <div class="navbar shadow-xl">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                        <li class="font-bold"><a>HOME</a></li>
+                        <li>
+                            <details>
+                                <summary>ABOUT US</summary>
+                                <ul class="p-2">
+                                    <li><a>BOARD OF DIRECTOR</a></li>
+                                    <li><a>VISION</a></li>
+                                </ul>
+                            </details>
+                        </li>
+                        <li><a>CAREER</a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="flex-none">
-                <ul class="menu menu-horizontal px-1 text-xl">
-                    <li><a>Home</a></li>
+            <div class="navbar-start lg:-ml-96 hidden lg:flex">
+                <ul class="menu menu-horizontal text-2xl  px-1">
+                    <li class="font-bold"><a>HOME</a></li>
                     <li>
                         <details>
-                            <summary class="font-bold">About US</summary>
-                            <ul class="rounded-t-none p-2">
-                                <li><a>Board of Directors</a></li>
-                                <li><a>Vision</a></li>
+                            <summary>ABOUT US</summary>
+                            <ul class="text-xl bg-slate-300 p-2">
+                                <li><a>BOARD OF DIRECTOR</a></li>
+                                <li><a>VISION</a></li>
                             </ul>
                         </details>
                     </li>
-                    <li><a>Career</a></li>
+                    <li><a>CAREER</a></li>
                 </ul>
             </div>
-        </nav>
+            <div class="navbar-end mr-5 lg:mr-40">
+                <img src="Images/logo.jpg" class="w-10 lg:1/6">
+            </div>
+        </div>
         <!-- Banner -->
-        <div class="h-32 w-screen">
+        <div>
 
         </div>
     </header>
@@ -512,7 +537,7 @@
             </div>
         </section>
         <!-- Upcoming Section -->
-        <section class="my-24">
+        <!-- <section class="my-24">
             <div class="flex w-screen h-40 bg-gray-500 text-white justify-center items-center gap-24">
                 <div class="bg-white w-1 h-32"></div>
                 <h1 class="text-4xl">Upcoming
@@ -531,7 +556,7 @@
                 <img src="Images/Epay-2-scaled.jpg" alt="">
                 <img src="Images/Epay-2-scaled.jpg" alt="">
             </div>
-        </section>
+        </section> -->
         <!-- career section -->
         <section class="my-24">
             <div class=" bg-base-50 p-10">
@@ -556,7 +581,8 @@
         </section>
     </main>
     <footer class="bg-black text-white flex flex-col lg:flex-row px-40 -ml-24 lg:-ml-1">
-        <div class="flex flex-col justify-center items-center text-center lg:border-r-2 lg:border-l-2 lg:border-gray-500 space-y-5 w-80 p-5">
+        <div
+            class="flex flex-col justify-center items-center text-center lg:border-r-2 lg:border-l-2 lg:border-gray-500 space-y-5 w-80 p-5">
             <img src="Icons/icons8-location-50.png" class="">
             <p>
                 Corporate Office: House- 4, Level- 2, Road-15, Block- D, Banani, Dhaka- 1213, Bangladesh.
@@ -566,12 +592,14 @@
             <img src="Icons/icons8-email-50.png" alt="">
             <p>info@unitedsaudgroup.com</p>
         </div>
-        <div class="flex flex-col justify-center items-center text-center w-80 lg:border-r-2 lg:border-l-2 lg:border-gray-500 space-y-5 p-5">
+        <div
+            class="flex flex-col justify-center items-center text-center w-80 lg:border-r-2 lg:border-l-2 lg:border-gray-500 space-y-5 p-5">
             <img src="Icons/icons8-phone-50.png" alt="">
             <p>+8801922255588</p>
             <p>+8809617888555</p>
         </div>
-        <div class="flex flex-col justify-center items-center text-center w-80 lg:border-r-2 border-gray-500 space-y-5 p-5 ">
+        <div
+            class="flex flex-col justify-center items-center text-center w-80 lg:border-r-2 border-gray-500 space-y-5 p-5 ">
             <div class="flex">
                 <img src="Icons/icons8-facebook-50.png" alt="">
                 <img src="Icons/icons8-linkedin-50.png" alt="">
