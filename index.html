@@ -25,6 +25,39 @@
             }
         }
     </script>
+    <!-- CSS Styles -->
+    <style>
+        .slider {
+            position: relative;
+            width: 100%;
+            margin: auto;
+            overflow: hidden;
+            border: 2px solid #ddd;
+        }
+
+        .slides {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+            width: 100%;
+        }
+
+        .slide {
+            min-width: 100%;
+            box-sizing: border-box;
+        }
+
+        @keyframes slide-animation {
+            0% { transform: translateX(0); }
+            25% { transform: translateX(-100%); }
+            50% { transform: translateX(-200%); }
+            75% { transform: translateX(-300%); }
+            100% { transform: translateX(0); }
+        }
+
+        .slides {
+            animation: slide-animation 10s infinite;
+        }
+    </style>
 </head>
 
 <body class="m-auto">
@@ -75,8 +108,15 @@
             </div>
         </div>
         <!-- Banner -->
-        <div>
-
+        <div class="relative w-full m-auto border border-gray-500 mb-12">
+            <div class="slider">
+                <div class="slides">
+                    <img src="Images/banner.png" alt="Image 1" class="slide">
+                    <img src="Images/banner (2).png" alt="Image 2" class="slide">
+                    <img src="Images/banner.png" alt="Image 3" class="slide">
+                    <img src="Images/banner (2).png" alt="Image 4" class="slide">
+                </div>
+            </div>
         </div>
     </header>
     <main class="container mx-auto">
